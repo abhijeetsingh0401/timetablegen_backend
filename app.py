@@ -10,7 +10,6 @@ if not hasattr(collections, 'MutableMapping'):
     import collections.abc
     collections.MutableMapping = collections.abc.MutableMapping
 
-
 # Firebase configuration (replace with your actual project settings)
 firebaseConfig = {
  "apiKey": "AIzaSyDu8nKmsNz6v0ckh2yy1ypwemwfo7v2Z4I",

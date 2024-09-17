@@ -3,6 +3,6 @@ python-constraint
 bson
 typing
 pydantic
-pyrebase
+pyrebase4
 uvicorn
 urllib3
