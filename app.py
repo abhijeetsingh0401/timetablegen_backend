@@ -6,11 +6,10 @@ from fastapi import FastAPI
 import uvicorn
 import pyrebase
 import collections
-import sys
+if not hasattr(collections, 'MutableMapping'):
+    import collections.abc
+    collections.MutableMapping = collections.abc.MutableMapping
 
-if sys.version_info.major == 3 and sys.version_info.minor >= 10:
-    import collections
-    setattr(collections, "MutableMapping", collections.abc.MutableMapping)
 
 # Firebase configuration (replace with your actual project settings)
 firebaseConfig = {
