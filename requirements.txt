@@ -5,4 +5,3 @@ typing
 pydantic
 pyrebase
 uvicorn
-collections
