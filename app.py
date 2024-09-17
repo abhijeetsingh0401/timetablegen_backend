@@ -3,7 +3,7 @@ from starlette.responses import HTMLResponse
 from csp import generate
 from model import Constraint, Course, CreateConstraint, CreateCourse
 from fastapi import FastAPI
-import uvicorn
+
 import pyrebase
 import collections
 if not hasattr(collections, 'MutableMapping'):
@@ -47,8 +47,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-if __name__ == '__main__':
-    uvicorn.run("app:app", host="localhost", port=8080, reload=True)
 
 
 @app.get("/get-courses")
